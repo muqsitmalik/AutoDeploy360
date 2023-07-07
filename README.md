@@ -2,7 +2,7 @@
 
 ## Project Description
 
-This project utilizes Jenkins to create a CI/CD pipeline for a Todo application. The code for the application is hosted on GitHub. A Dockerfile is used to build a container image for the application, which is then deployed using Jenkins.
+This project utilizes Jenkins to create a CI/CD pipeline for a Todo application. The code for the application is hosted on GitHub. A Dockerfile is used to build a container image for the application, which is then deployed to an EC2 instance using Jenkins.
 
 ### CI/CD Pipeline Overview
 
@@ -11,7 +11,7 @@ The CI/CD pipeline follows these steps:
 1. **Source Code Management**: The project's code is stored in a GitHub repository.
 2. **Continuous Integration**: Jenkins is configured to monitor the GitHub repository for changes. Whenever a new commit is made, Jenkins triggers the build process.
 3. **Build Process**: Jenkins fetches the latest code from the GitHub repository and builds the Docker image using the provided Dockerfile.
-4. **Deployment**: Jenkins deploys the Docker image to the desired environment, such as a production server or a testing environment.
+4. **Deployment**: Jenkins deploys the Docker image to an EC2 instance, where the application is hosted and made available to users.
 5. **Continuous Delivery**: The application is made available to users, and further changes can be seamlessly deployed using the same pipeline.
 
 ### Docker Image
@@ -20,11 +20,11 @@ The Dockerfile provided in the project is responsible for creating the Docker im
 
 ### Jenkins Configuration
 
-Jenkins is set up to automate the CI/CD pipeline. It monitors the GitHub repository for changes, triggers the build process, and deploys the Docker image. The Jenkins configuration includes the necessary plugins, build steps, and deployment configurations to ensure a smooth pipeline.
+Jenkins is set up to automate the CI/CD pipeline. It monitors the GitHub repository for changes, triggers the build process, and deploys the Docker image to the EC2 instance. The Jenkins configuration includes the necessary plugins, build steps, and deployment configurations to ensure a smooth pipeline.
 
 ### GitHub Repository
 
-The GitHub repository contains the source code of the Todo application. It serves as the central repository for collaboration and version control. The repository is linked to Jenkins, allowing for automatic builds and deployments whenever changes are made.
+The GitHub repository contains the source code of the Todo application. It serves as the central repository for collaboration and version control. The repository is linked to Jenkins, allowing for automatic builds and deployments whenever changes are made. The code for the Todo application is available on Shubham's GitHub account. To access the code, please refer to Shubham's GitHub repository.
 
 ### Images
 
